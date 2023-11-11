@@ -1,0 +1,225 @@
+getgenv().Cursin = {
+    ['StartUP'] = {
+        Key = 'LuarmorKey', -- replace with luarmor key
+        UWP_Optimize = true,
+        UnlockFPS = true,
+        Intro = true,
+        FakeRecord = true,
+    },
+    ['Panic'] = {
+        Enabled = false,
+        Key = 'L',
+    },
+    ['Silent'] = {
+        Normal = {
+            Enabled = true,
+            HitChance = 300,
+        },
+        KeyBind = {
+            Enabled = true,
+            KeyBind = 't',
+            Notification = true,
+        },
+        HitPart = {
+            NearestPoint = true,
+            HitPart = 'HumanoidRootPart',
+        },
+        Prediction = {
+            Enabled = true,
+            AutoMated = false, -- auto prediction
+            Prediction = 0.125,
+        },
+    },
+    ['CamLock'] = {
+        Normal = {
+            Enabled = true,
+            ThirdPerson = true,
+            FirstPerson = true,
+        },
+        KeyBind = {
+            Hold = false,
+            Mode = 'KeyBind', -- or "Mouse"
+            KeyBind = 'q',
+            MouseBind = Enum.UserInputType.MouseButton2,
+        },
+        Prediction = {
+            Enabled = true,
+            Prediction = 0.115,
+        },
+        Style = {
+            First = 'Elastic',
+            Second = 'Sine'
+        },
+        Smoothness = {
+            Enabled = true,
+            Smoothness = 0.032,
+            AirShot = 0.034,
+        },
+        Shake = {
+            Enabled = false,
+            DirectionX = 8,
+            DirectionY = 6,
+            DirectionZ = 7,
+        },
+        HitPart = {
+            NearestPoint = true,
+            AirShot = true,
+            Part = 'HumanoidRootPart',
+            AirPart = 'HumanoidRootPart',
+        },
+        AutoUnLock = {
+            Reloading = false,
+            Typing = false,
+        },
+    },
+    ['Fov'] = {
+        CamLock = {
+            Show = true,
+            Use_Radius = true,
+            Radius = 100,
+            Model = 'Circle'
+        },
+        SilentAim = {
+            Show = true,
+            Use_Radius = true,
+            Radius = 5,
+            Model = 'Circle',
+            StickFov = false,
+        },
+    },
+    ['Adjustment'] = {
+      ['Checks'] = {
+            Resolver = true,
+            Anti_Aim_Viewer = true,
+            Wall_Check = true,
+            Disable_Ground_Shots = true,
+            Crew_Check = false,
+            Knocked_Check = true,
+            AntiCurve = true,
+            NoGroundShots = true,
+        },
+        ['Gun_Fov'] = {
+            Enabled = false,
+            DoubleBarrel = 22.5,
+            Revolver = 27.5,
+            Shotgun = 35,
+            TacticalShotgun = 35,
+            Smg = 25,
+            Silencer = 32.5,
+            P90 = 40.2,
+            Ak47 = 50,
+            DrumGun = 60,
+        },
+        ['Mod'] = {
+            Enabled = false,
+            Message = 'lol...',
+            Kick_if_Mod_Joined = true,
+        },
+        ['FakeSpike'] = {
+            Enabled = false,
+            FakeSpikeKeybind = 'B',
+            SpikeDuration = 1,            
+        },
+        ['Anti_Lock'] = {
+            Enabled = false,
+            KeyBind = Enum.KeyCode.P
+        },
+        ['Macro'] = {
+            Enabled = true,
+            Hold_Key = true,
+            KeyBind = Enum.KeyCode.X,
+            Mode = '1' -- 1 = ioio 2 = scroll
+        },
+        ['FrameSkip'] = {
+            Enabled = false,
+            Notification = false,
+            Use_KeyBind = true,
+            ToggleKey = 'j',
+        },
+        ['Auto360'] = {
+            Enabled = true,
+            SpinKeybind = 'B',
+            SpinSpeed = 1,
+        },
+        ['TriggerBot'] = {
+            Enabled = false,
+            Delay = 0.1,
+                KeyBinds = {
+                    Enabled = true,
+                    Notifications = true,
+                    KeyBind = 't',
+            },
+        },
+        ['Memory'] = {
+            Enable = true,
+            Start = 1271,
+            End = 1684,
+            Speed = 1,
+        },
+        ['Sorting'] = {
+            ['Enabled'] = false,
+            ['Key Bind'] = 'X',
+            ['Tool 1'] = "[Double-Barrel SG]",
+            ['Tool 2'] = "[Revolver]",
+            ['Tool 3'] = "[Cookie]",
+            ['Tool 4'] = "[Chicken]",
+            ['Tool 5'] = "[Chicken]",
+            ['Tool 6'] = "[Pizza]",
+            ['Tool 7'] = "[Pizza]",
+            ['Tool 8'] = "",
+            ['Tool 9'] = "",
+            ['Tool l0'] = "[Katana]",
+        },
+        ['Animation'] = { -- keybind = use animation
+            Lay = false,
+            LayKey = Enum.KeyCode.T,
+            Greet = true,
+            GreetKey = Enum.KeyCode.G,
+            Speed = false,
+            SpeedKey = Enum.KeyCode.N,
+            Sturdy = false,
+            SturdyKey = Enum.KeyCode.H,
+            Griddy = false,
+            GriddyKey = Enum.KeyCode.G,
+        },
+        ['Chat'] = {
+            Enabled = true, --  example !fov 120
+            SilentAim_Fov_Size = '!fov',
+            SilentAim_Prediction = '!Prediction',
+            CamLock_fov_Size = '/fov',
+            CamLock_Smoothness = '/Smoothness',
+            CamLock_PreDiction = '/ped',
+        },
+        ['ESP'] = {
+            Enabled = false,
+            KeyBind = true,
+            KeyBindNotification = true,
+            Key = Enum.KeyCode.N,
+            box = true,
+            boxcolor1 = Color3.fromRGB(255,255,255),
+            name = false,
+            displayname = false,
+            headdot = false,
+            health = true,
+            healthcolor = Color3.fromRGB(255,255,255),
+            healthtransparency = 1,
+            healthbar = true,
+            healthbarcolor1 = Color3.fromRGB(0,255,0),
+            healthbarcolor2 = Color3.fromRGB(255,0,0),
+            distance = true,
+            outoffovarrows = false,
+            arrowsoffset = 10,
+            arrowscolor = Color3.fromRGB(255,255,255),
+            arrowsfilled = false,
+            arrowsthickness = 2.5,
+            textcase = 1,
+            maxtextlength = 2^16,
+            hpvisibilitycap = 100,
+            checks = {
+                false, -- alive check
+                false, -- distance check 
+            },
+            maxdistance = 2^14,
+        },
+    },
+  }
